@@ -27,11 +27,6 @@ namespace Calculator
             MessageBox.Show("Double click on " + sender.ToString() + "??! Calm down!");
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Click on " + sender.ToString() + "??! Good job!");
-        }
-
         private void button_Click(object sender, EventArgs e)
         {
             textBox1.Text += (sender as Button).Text;
@@ -65,31 +60,5 @@ namespace Calculator
             textBox1.Text = "";
         }
 
-        private void decimalPoint_Click(object sender, EventArgs e)
-        {
-            textBox1.Text += ".";
-        }
-
-        private void openP_Click(object sender, EventArgs e)
-        {
-            textBox1.Text += "(";
-        }
-
-        private void closeP_Click(object sender, EventArgs e)
-        {
-            textBox1.Text += ")";
-        }
-
-        private void anybutton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void example(object sender, EventArgs e)
-        {
-            textBox1.Text += "0";
-        }
-
-        
     }
 }
